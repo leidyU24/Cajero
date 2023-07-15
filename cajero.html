@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div>
+            <span id="saludo">
+            </span>
+        </div>
+        <div>
+            <span id="dinero">
+
+            </span>
+        </div>
+        <div class="cardResult">
+            <div>
+                <div class="card">
+                    <button class="button buttonleft is-primary is-rounded" id="consignar">Consignar Dinero</button>
+                    <button class="button buttonleft is-primary is-rounded" id="retirar">Retirar Dinero</button>
+                    <button class="button buttonleft is-primary is-rounded" id="btnSaldo">Consultar saldo</button>
+                </div>
+            </div>
+            <div class="card cardR">
+                <div class="bienvanida " >
+                    <div class="boxCajero" id="inicio">
+                        <div class="gu" >
+                            <h6 class="title" >Bienvenido al banco de Leidy</h6>
+                        </div>
+                    </div>
+                    <div class="box boxCajero spt" id="boxConsignar">
+                        <h6 class="title">Consignar Dinero</h6>
+
+                        <input class="input" type="text" placeholder="Text input" id="valorMonto">
+                        <span>
+                            Ingresa el monto a Consignar
+                        </span>
+                        <div class="respConsignacion">
+                            <button class="button buttonRes is-primary" id="consignarMonto">
+                                <span class="is-small">
+                                    <i class="fas fa-align-left"></i>
+                                </span>
+                                <span>Consignar</span>
+                            </button>
+                            <div class="spt" id="alert">
+                                <span class="tag is-success is-light" id="mensaje"></span>
+                            </div>
+                            <div class="spt" id="warning">
+                                <span class="tag is-warning is-light" id="msnError"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="box boxCajero spt" id="boxRetirar">
+                        <h6 class="title">Retirar Dinero</h6>
+
+                        <input class="input" type="text" placeholder="Text input" id="valorRetiro">
+                        <span>
+                            Ingresa el monto a Retirar
+                        </span>
+                        <div class="respConsignacion">
+                            <button class="button buttonRes is-primary" id="retirarMonto">
+                                <span class="is-small">
+                                    <i class="fas fa-align-left"></i>
+                                </span>
+                                <span>Retirar</span>
+                            </button>
+                            <div class="spt" id="alert2">
+                                <span class="tag is-success is-light" id="mensaje2"></span>
+                            </div>
+                            <div class="spt" id="warning2">
+                                <span class="tag is-warning is-light" id="msnError2"></span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="box boxCajero spt" id="boxSaldo">
+                        <h6 class="title">Transacciones</h6>
+                        <div class="column is-half">
+                            <table class="table is-fullwidth">
+                              <thead>
+                                <tr>
+                                  <th>Fecha</th>
+                                  <th>Tipo</th>
+                                  <th>Monto</th>
+                                </tr>
+                              </thead>
+                              <tbody id="trasaccion">
+                    
+                              </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <span id="diner2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="cajero.js"></script>
+    <script src="retirar.js"></script>
+    <script src="saldo.js"></script>
+</body>
+
+</html>

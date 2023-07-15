@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>
+
+    </header>
+    <main>
+      <div class="cuadro">
+        <div class="box">
+          <div class="field">
+            <label class="label">N° Cuenta</label>
+            <div class="control">
+              <input class="input" type="text" id="cuenta" placeholder="0001">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" >Password</label>
+            <div class="control">
+              <input class="input" type="password" id="passw" maxlength="4" placeholder="****">
+            </div>
+          </div>
+          <div id="componetAcceso" class="spt">
+            <span id="alerta" class="tag is-warning is-light ">
+            </span>
+          </div>
+          <button class="button is-primary" id="acceso" >Sign in</button>
+        </div>
+      </div>
+        
+    </main>
+    <footer>
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Banco de Leidy</strong> by <a href="https://github.com/leidyU24?tab=repositories">Leidy Urrego</a>
+              </p>
+            </div>
+          </footer>
+    </footer>
+    <script src="login.js"></script>
+</body>
+
+</html>
